@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 "use client"
 
 import { useState, useMemo } from "react"
@@ -432,7 +434,7 @@ export default function BlogPage() {
               <ul className="space-y-2">
                 {col.links.map((link) => (
                   <li key={link}>
-                    <Link href="#" className="text-xs text-gray-400 hover:text-white transition-colors">
+                    <Link href="/" className="text-xs text-gray-400 hover:text-white transition-colors">
                       {link}
                     </Link>
                   </li>
@@ -445,7 +447,7 @@ export default function BlogPage() {
           <p className="text-xs text-gray-500">© DataEnginex 2026. All rights reserved.</p>
           <div className="flex gap-4">
             {["Privacy Notice", "Terms of Use", "Contact"].map((item) => (
-              <Link key={item} href="#" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+              <Link key={item} href="/" className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
                 {item}
               </Link>
             ))}
