@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
+  title: 'Data EngineX',
   author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  headerTitle: 'Data EngineX',
+  description: 'Professional Insights into Data Engineering, AI, and Domain Investing.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://dataenginex.com',
