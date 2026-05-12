@@ -76,22 +76,19 @@ const stackItems = [
 const articles = [
   {
     title: 'Databricks vs Snowflake',
-    excerpt:
-      'A modern comparison between the two biggest cloud data platforms.',
+    excerpt: 'A modern comparison between the two biggest cloud data platforms.',
     tag: 'Comparison',
     color: '#FF3621',
   },
   {
     title: 'Best Data Engineering Roadmap',
-    excerpt:
-      'Learn the exact skills needed to become a modern data engineer.',
+    excerpt: 'Learn the exact skills needed to become a modern data engineer.',
     tag: 'Career',
     color: '#03EF62',
   },
   {
     title: 'Your First dbt Pipeline',
-    excerpt:
-      'Step-by-step guide to build a scalable transformation workflow.',
+    excerpt: 'Step-by-step guide to build a scalable transformation workflow.',
     tag: 'Tutorial',
     color: '#A435F0',
   },
@@ -121,18 +118,16 @@ export default function HomePage() {
 
       {/* Glow Effects */}
       <div
-        className="pointer-events-none fixed left-[-200px] top-[-200px] h-[600px] w-[600px] rounded-full"
+        className="pointer-events-none fixed top-[-200px] left-[-200px] h-[600px] w-[600px] rounded-full"
         style={{
-          background:
-            'radial-gradient(circle, rgba(55,138,221,0.12) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(55,138,221,0.12) 0%, transparent 70%)',
         }}
       />
 
       <div
-        className="pointer-events-none fixed bottom-[-200px] right-[-100px] h-[500px] w-[500px] rounded-full"
+        className="pointer-events-none fixed right-[-100px] bottom-[-200px] h-[500px] w-[500px] rounded-full"
         style={{
-          background:
-            'radial-gradient(circle, rgba(255,54,33,0.08) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(255,54,33,0.08) 0%, transparent 70%)',
         }}
       />
 
@@ -176,14 +171,14 @@ export default function HomePage() {
       </nav>
 
       {/* Hero */}
-      <section className="relative mx-auto max-w-6xl px-6 pb-24 pt-28 text-center">
+      <section className="relative mx-auto max-w-6xl px-6 pt-28 pb-24 text-center">
         <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/5 px-4 py-1.5 text-xs text-blue-400">
           <span className="h-2 w-2 animate-pulse rounded-full bg-blue-400" />
           Modern Data Engineering Platform
         </div>
 
         <h1
-          className="mb-6 text-5xl font-bold leading-tight md:text-7xl"
+          className="mb-6 text-5xl leading-tight font-bold md:text-7xl"
           style={{
             fontFamily: 'Georgia, serif',
           }}
@@ -191,8 +186,7 @@ export default function HomePage() {
           Master the <br />
           <span
             style={{
-              background:
-                'linear-gradient(135deg, #378ADD 0%, #60a5fa 50%, #378ADD 100%)',
+              background: 'linear-gradient(135deg, #378ADD 0%, #60a5fa 50%, #378ADD 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
             }}
@@ -202,8 +196,8 @@ export default function HomePage() {
         </h1>
 
         <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-white/50">
-          Learn Spark, dbt, Snowflake, Airflow, Kafka, and cloud data
-          engineering through practical tutorials and unbiased comparisons.
+          Learn Spark, dbt, Snowflake, Airflow, Kafka, and cloud data engineering through practical
+          tutorials and unbiased comparisons.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4">
@@ -249,9 +243,7 @@ export default function HomePage() {
       >
         <div className="mx-auto grid max-w-6xl grid-cols-3 divide-x divide-white/5 px-6">
           <div className="text-center">
-            <p className="mb-2 text-4xl font-bold">
-              {readers.toLocaleString()}+
-            </p>
+            <p className="mb-2 text-4xl font-bold">{readers.toLocaleString()}+</p>
             <p className="text-sm text-white/40">Monthly Readers</p>
           </div>
 
@@ -270,9 +262,7 @@ export default function HomePage() {
       {/* Articles */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-10">
-          <p className="mb-2 text-xs uppercase tracking-widest text-blue-400">
-            Latest Articles
-          </p>
+          <p className="mb-2 text-xs tracking-widest text-blue-400 uppercase">Latest Articles</p>
 
           <h2 className="text-3xl font-bold">Recent Insights</h2>
         </div>
@@ -287,19 +277,15 @@ export default function HomePage() {
               }}
             >
               <span
-                className="mb-4 block text-xs font-bold uppercase tracking-wider"
+                className="mb-4 block text-xs font-bold tracking-wider uppercase"
                 style={{ color: article.color }}
               >
                 {article.tag}
               </span>
 
-              <h3 className="mb-4 text-xl font-semibold">
-                {article.title}
-              </h3>
+              <h3 className="mb-4 text-xl font-semibold">{article.title}</h3>
 
-              <p className="leading-relaxed text-white/40">
-                {article.excerpt}
-              </p>
+              <p className="leading-relaxed text-white/40">{article.excerpt}</p>
             </div>
           ))}
         </div>
@@ -314,17 +300,13 @@ export default function HomePage() {
               'linear-gradient(135deg, rgba(55,138,221,0.06) 0%, rgba(10,15,30,0.95) 100%)',
           }}
         >
-          <p className="mb-3 text-xs uppercase tracking-widest text-blue-400">
-            Newsletter
-          </p>
+          <p className="mb-3 text-xs tracking-widest text-blue-400 uppercase">Newsletter</p>
 
-          <h2 className="mb-4 text-4xl font-bold">
-            Stay Ahead of the Data Stack
-          </h2>
+          <h2 className="mb-4 text-4xl font-bold">Stay Ahead of the Data Stack</h2>
 
           <p className="mx-auto mb-8 max-w-xl text-white/40">
-            Weekly insights on Spark, dbt, Snowflake, AI pipelines, salaries,
-            and cloud engineering trends.
+            Weekly insights on Spark, dbt, Snowflake, AI pipelines, salaries, and cloud engineering
+            trends.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-4">
@@ -360,9 +342,7 @@ export default function HomePage() {
           </div>
 
           <div>
-            <p className="mb-4 text-sm font-semibold text-white">
-              Content
-            </p>
+            <p className="mb-4 text-sm font-semibold text-white">Content</p>
 
             <div className="space-y-3 text-sm text-white/40">
               <p>Blog</p>
@@ -373,9 +353,7 @@ export default function HomePage() {
           </div>
 
           <div>
-            <p className="mb-4 text-sm font-semibold text-white">
-              Company
-            </p>
+            <p className="mb-4 text-sm font-semibold text-white">Company</p>
 
             <div className="space-y-3 text-sm text-white/40">
               <p>About</p>
@@ -386,9 +364,7 @@ export default function HomePage() {
           </div>
 
           <div>
-            <p className="mb-4 text-sm font-semibold text-white">
-              Social
-            </p>
+            <p className="mb-4 text-sm font-semibold text-white">Social</p>
 
             <div className="space-y-3 text-sm text-white/40">
               <p>Twitter</p>
